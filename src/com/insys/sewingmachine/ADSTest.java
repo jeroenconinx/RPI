@@ -125,7 +125,7 @@ import java.util.concurrent.ThreadLocalRandom;
             System.out.println("Initialisation complete");
     	}
     	
-    	public static int readData() {
+    	public static void readData() {
     		int printCounter = 0; // is used to print out the result every x ticks
     		int queryCounter = 0; // is used to query the result every x ticks
     		int result;
@@ -183,9 +183,6 @@ import java.util.concurrent.ThreadLocalRandom;
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
-				
-				//uncomment following line to get return-value, used in Graphtest
-				return measurement;
 			}
     	}
     	
